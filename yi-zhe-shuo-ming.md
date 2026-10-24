@@ -689,20 +689,30 @@
 
 | 英文 | 中文 | 备注 |
 | ---- | ---- | ---- |
-| University of California at Berkeley | 加州大学伯克利分校 | |
-| Bell Laboratories / Bell Labs | 贝尔实验室 | |
-| Western Electric | 西方电气公司 | |
-| AT&T | — | 保留 |
-| IBM | — | 保留 |
-| DEC（Digital Equipment Corporation） | — | 保留 DEC；需要全称时译“数字设备公司” |
-| Sun Microsystems | — | 保留 Sun |
-| Xerox | 施乐 | Xerox PARC 施乐帕洛阿尔托研究中心 |
-| Hewlett-Packard | 惠普 | |
-| Massachusetts Institute of Technology（MIT） | 麻省理工学院 | |
-| DARPA | 美国国防高级研究计划局 | 正文中 DARPA Internet 保留专名 |
-| Silicon Graphics | 硅图公司 | |
 | Addison-Wesley | 艾迪生-韦斯利 | 出版社 |
+| AT&T | — | 保留 |
+| Bell Laboratories / Bell Labs | 贝尔实验室 | |
+| Carnegie-Mellon University | 卡内基-梅隆大学 | |
+| DARPA | 美国国防高级研究计划局 | 正文中 DARPA Internet 保留专名 |
+| DEC（Digital Equipment Corporation） | — | 保留 DEC；需要全称时译“数字设备公司” |
+| Hewlett-Packard | 惠普 | |
+| IBM | — | 保留 |
+| International Computer Science Institute (ICSI) | 国际计算机科学研究所（ICSI） | |
+| Massachusetts Institute of Technology（MIT） | 麻省理工学院 | |
 | McGraw-Hill | 麦格劳-希尔 | 出版社 |
+| Silicon Graphics | 硅图公司 | |
+| Sun Microsystems | — | 保留 Sun |
+| University of Arizona | 亚利桑那大学 | |
+| University of California at Berkeley | 加州大学伯克利分校 | |
+| University of Colorado | 科罗拉多大学 | |
+| University of Kent | 肯特大学 | |
+| University of Maryland | 马里兰大学 | |
+| University of Melbourne | 墨尔本大学 | |
+| University of Rochester | 罗切斯特大学 | |
+| University of Utah | 犹他大学 | |
+| Usenix Association | Usenix 协会 | 保留 Usenix |
+| Western Electric | 西方电气公司 | |
+| Xerox | 施乐 | Xerox PARC 施乐帕洛阿尔托研究中心 |
 
 ## 书名/文献表
 
