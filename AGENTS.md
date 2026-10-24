@@ -37,7 +37,7 @@ py script/render_pages.py 26 40        # 渲染印刷页 26–40（正文默认 
 py script/render_pages.py 268 277 300  # 代码密集页用 300 DPI
 ```
 
-* `render_pages.py` 内置印刷页 ↔ PDF 页偏移（**印刷第 1 页 = PDF 第 26 页**；前置罗马页 vii–xii = PDF 第 8–13 页），输出 `script/pages/pNNNN.png`（文件名用印刷页码）。
+* `render_pages.py` 内置印刷页 ↔ PDF 页偏移（**印刷第 1 页 = PDF 第 24 页，即 PDF = 印刷 + 23**；印刷 3 = PDF 26 第 1 章起始、印刷 413 = PDF 436 词汇表、印刷 451 = PDF 474 索引、印刷 473 = PDF 496 末页；前置罗马页 vii–xxii = PDF 第 8–23 页），输出 `script/pages/pNNNN.png`（文件名用印刷页码）。
 * 渲染完成后按“视觉转录工作流”派 1–2 路子代理生成 `en/` 文本（`01-preface.txt`、`02-ch01-history-and-goals.txt` … `16-index.txt`）。
 * 若 PDF 有更新或渲染有误，直接修改脚本后重新运行，不要在 `en/` 中手工修补文本。
 

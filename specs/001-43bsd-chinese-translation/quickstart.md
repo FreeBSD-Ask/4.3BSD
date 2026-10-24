@@ -5,7 +5,7 @@
 ## 场景 A：原文管线（渲染 → 视觉转录）
 
 ```sh
-py script/render_pages.py 8 13        # 渲染印刷页 8–13（前言）为 script/pages/p0008.png …
+py script/render_pages.py vii xii     # 渲染前言（印刷页 vii–xii）
 py script/render_pages.py 26 40 300   # 代码页用 300 DPI
 ```
 
