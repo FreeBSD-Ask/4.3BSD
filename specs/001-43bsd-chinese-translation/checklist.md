@@ -22,7 +22,7 @@
 * [ ] Check 15: `en/` 全部文件 `[UNCLEAR]` 计数为 0，或每条附有主会话裁决注记。（来源：FR-006／T047）
 * [ ] Check 16: 随机抽 3 页，`en/` 转录文本与 `script/pages/` 对应 PNG 逐词一致（含脚注与标点）。（来源：US4 场景／T047）
 * [ ] Check 17: `py script/render_pages.py`、`check_quotes.py`、`check_bold.py`、`compare_structure.py`、`extract_figures.py` 五个脚本存在且各自可运行退出码 0。（来源：T011–T015）
-* [ ] Check 18: `.gitbook/assets/` 内全部插图文件与 `en/` 的 `[FIGURE p.n …]` 标记按页码一一对应（对照 `script/figures-map.md`）。（来源：FR-007／T046）
+* [ ] Check 18: `.gitbook/assets/` 内 86 幅真插图与 `en/` 的 `[FIGURE p.n …]` 标记按页码一一对应（对照 `script/figures-tmp/figures-final.md` 处置列；26 幅文本类图已按 2026-10-25 裁定转写弃图，不在 assets，译文用代码块/表格呈现）。（来源：FR-007／T046）
 * [ ] Check 19: `README.md` 含书名（中英对照）、四位作者、原书简介与项目链接。（来源：T002）
 * [ ] Check 20: `.gitignore` 含 `en/`、`script/pages/`、`*.pdf`；`git status` 中 2.pdf、en/、script/ 不出现为未跟踪内容。（来源：T001）
 
