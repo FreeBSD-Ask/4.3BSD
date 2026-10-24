@@ -40,7 +40,7 @@
 | address space | 地址空间 | |
 | address translation | 地址转换 | 多由硬件实现 |
 | advisory lock | 劝告锁 | 仅显式请求才强制，与强制锁相对 |
-| AGE buffer list | AGE 缓冲区链表 | 缓冲区高速缓存中暂不常用的缓冲区 |
+| AGE buffer list | AGE 缓冲区链表 | 存放内容尚未证明有用的缓冲区（如预读块） |
 | ARP | 地址解析协议（ARP） | 见 Address Resolution Protocol |
 | ARPANET | — | 专名保留 |
 | ARPANET Host Access Protocol | ARPANET 主机访问协议 | 主机与 ARPANET PSN 间通信所用协议 |
@@ -116,7 +116,7 @@
 | connection | 连接 | |
 | connect request | 连接请求 | |
 | console | 控制台 | |
-| console monitor | 控制台监控程序 | |
+| console monitor | 控制台终端 | 连接在控制台终端接口上的终端 |
 | console processor | 控制台处理机 | VAX 控制台 LSI-11 |
 | context | 上下文 | |
 | context switching | 上下文切换 | |
@@ -124,7 +124,7 @@
 | control block | 控制块 | |
 | controlling terminal | 控制终端 | |
 | control request | 控制请求 | |
-| cooked mode | 成熟模式 | 即规范模式（canonical mode） |
+| cooked mode | 规范模式（cooked） | 终端默认模式：整行处理后才交付输入，与原始模式、cbreak 模式并列；即 canonical mode |
 | copy-on-write | 写时复制 | |
 | core dump | 核心转储 | 见 core file、crash dump |
 | core file | core 文件 | 进程收到特定信号时系统生成的状态记录文件，名为 core |
@@ -246,7 +246,7 @@
 | internet domain | 网际域 | 支持 DARPA Internet 体系结构的通信域 |
 | internet host address | 网际主机地址 | 32 位，同时标识网络与主机 |
 | Internet Protocol (IP) | 网际协议（IP） | |
-| internetwork | 网际互联网 | 视上下文 |
+| internetwork | 互连网 | 视上下文；谢希仁《计算机网络》译法，与 Internet 专名区分 |
 | Internetwork Datagram Protocol (IDP) | 网际数据报协议（IDP） | XNS |
 | interprocess communication (IPC) | 进程间通信（IPC） | 4.3BSD 中通信在套接字之间而非进程之间进行 |
 | interrupt | 中断 | |
@@ -285,7 +285,7 @@
 | linked list | 链表 | |
 | link layer | 链路层 | |
 | listen request | 监听请求 | |
-| load average | 负载均值 | |
+| load average | 平均负载 | 就绪与等待磁盘 I/O 进程数的 1 分钟均值 |
 | locality | 局部性 | |
 | locality of reference | 引用局部性 | |
 | lock | 锁 | |
@@ -297,7 +297,7 @@
 | loop | 页环 | 存储管理中由全局 CLOCK 算法管理的常驻页集合 |
 | lossy | 易丢包的 | |
 | low watermark | 低水位线 | |
-| machine check | 机器校验 | VAX 硬件错误 |
+| machine check | 机器检查 | VAX 硬件错误；与 checksum（校验和）区分 |
 | machine-dependent | 与机器相关的 | |
 | machine-independent | 与机器无关的 | |
 | magic number | 魔数 | |
@@ -305,7 +305,7 @@
 | major-device number | 主设备号 | |
 | mapped | 已映射的 | |
 | mapping | 映射 | |
-| mark and sweep algorithm | 标记-清扫算法 | |
+| mark and sweep algorithm | 标记-清除算法 | 垃圾收集通行译法 |
 | masked | 屏蔽的 | 信号屏蔽 |
 | MASSBUS adapter | MASSBUS 适配器 | |
 | MASSBUS-adapter support routines | MASSBUS 适配器支持例程 | |
@@ -382,7 +382,7 @@
 | parent process | 父进程 | |
 | partition | 分区 | |
 | pathname | 路径名 | 以斜杠分隔的字符串；行首斜杠为绝对路径名，否则为相对路径名 |
-| PCB | 进程控制块（PCB） | 见 process control block；与 protocol control block 区分 |
+| PCB | 进程控制块（PCB） | 见 process control block（进程控制块）；与协议控制块按语境区分 |
 | PCBB | 进程控制块基址（PCBB） | VAX |
 | permission | 权限 | |
 | persist timer | 持续计时器 | TCP 零窗口探测 |
@@ -392,8 +392,8 @@
 | physical unit number | 物理部件号 | |
 | PID | 进程标识符（PID） | 见 process identifier |
 | pipe | 管道 | 相关进程间的单向数据流 |
-| pipeline | 管道线 | 指令流水线或命令管道，按语境 |
-| placement policy | 布置策略 | 调入的页放到何处 |
+| pipeline | 管道线 | 以管道连接的进程链：一进程的标准输出接下一进程的标准输入 |
+| placement policy | 放置策略 | 调入的页放到何处 |
 | pointer | 指针 | |
 | port（网络） | 端口 | |
 | port / porting（移植） | 移植 | 与“端口”按义项区分 |
@@ -424,7 +424,7 @@
 | protocol | 协议 | |
 | protocol control block（PCB） | 协议控制块 | 与进程控制块按语境区分 |
 | protocol family | 协议族 | |
-| protocol switch structure | 协议开关结构 | protosw |
+| protocol switch structure | 协议开关结构 | `protosw` |
 | pseudo-device | 伪设备 | |
 | pseudo-DMA | 伪 DMA | 主处理机代行 DMA 传输 |
 | PSL | 处理机状态长字（PSL） | |
@@ -477,10 +477,10 @@
 | routing table | 路由表 | |
 | run queue | 运行队列 | |
 | SBR | 系统基址寄存器（SBR） | |
-| scatter/gather I/O | 分散/聚集 I/O | 百度百科词条“分散/聚集方式 I/O”、微软文档 |
+| scatter/gather I/O | 分散/聚集 I/O | 正文补充词条（词汇表无此条目），通行译法 |
 | scatter loading | 分散装载 | |
 | scheduling | 调度 | |
-| scheduling priority | 调度优先级 | 内核按进程优先级与 nice 值周期性重算 |
+| scheduling priority | 调度优先级 | 进程在用户态执行时，内核按进程优先级与 nice 值周期性重算 |
 | secondary storage | 辅存 | 亦可“二级存储器” |
 | sector | 扇区 | |
 | seek | 寻道 | |
@@ -488,7 +488,7 @@
 | select | — | 系统调用名保留 |
 | semaphore | 信号量 | |
 | send window | 发送窗口 | |
-| sense request | 读状态请求 | 磁带机 sense 操作 |
+| sense request | 状态请求 | 进程在套接字上执行 stat 系统调用后传入用户请求例程的请求 |
 | Sequenced Packet Protocol (SPP) | 顺序分组协议（SPP） | XNS |
 | sequenced packet socket | 顺序分组套接字 | |
 | sequence space | 序号空间 | TCP |
@@ -496,10 +496,10 @@
 | server process | 服务器进程 | |
 | session | 会话 | 作业控制中单次登录启动的全部进程 |
 | set-group-identifier program | 设置组标识符程序 | setgid 程序 |
-| set-priority-level | 设置优先级 | SPL 指令/机制 |
+| set-priority-level | 设置优先级 | 经 `spl` 前缀例程（如 `spltty()`）设置处理机优先级 |
 | set-user-identifier program | 设置用户标识符程序 | setuid 程序 |
-| shadow swap map | 影子交换映射 | 磁盘 swap map 的内存副本 |
-| shared text | 共享正文段 | text structure |
+| shadow swap map | 影子交换映射 | 位于每个进程 user 结构中，在进程持有既有交换空间期间临时记录新分配的交换空间 |
+| shared text | 共享正文段 | 即 shared text segment 的行文用词 |
 | shared text segment | 共享正文段 | 多个进程共享的正文段，由魔数识别 |
 | shell | — | 不译 |
 | short-term–scheduling algorithm | 短期调度算法 | |
@@ -508,7 +508,7 @@
 | signal-driven I/O | 信号驱动 I/O | |
 | signal handler | 信号处理程序 | 响应信号的过程，经 sigvec 安装 |
 | signal posting | 信号发送 | |
-| signal-trampoline code | 信号蹦床代码 | sigtramp |
+| signal-trampoline code | 信号蹦床代码 | `sigtramp` |
 | silly-window syndrome | 糊涂窗口综合症 | |
 | silly window syndrome（SWS） | 糊涂窗口综合症 | 中文维基百科、百度百科通行译法 |
 | single indirect block | 一级间接块 | |
@@ -518,7 +518,7 @@
 | sleep queue | 睡眠队列 | |
 | sliding-window scheme | 滑动窗口机制 | |
 | SLIP | 串行线路 IP（SLIP） | |
-| slip sector | 滑移扇区 | 主轴缺陷扇区的偏移重映射 |
+| slip sector | 滑移扇区 | 用于替换同一磁道上坏扇区的扇区 |
 | slip-sector forwarding | 滑移扇区转发 | |
 | slow start | 慢启动 | |
 | SLR | 系统长度寄存器（SLR） | |
@@ -551,7 +551,7 @@
 | structure | 结构体 | C 语境 |
 | subnetwork | 子网 | |
 | superblock | 超级块 | |
-| superuser | 超级用户 | UID 为 0 的用户，登录名通常为 root |
+| superuser | 超级用户 | UID 为 0 的用户，登录名通常为 `root` |
 | svpctx | — | VAX 指令：保存进程上下文，保留 |
 | swap | 交换 | |
 | swap area | 交换区 | |
@@ -560,7 +560,7 @@
 | swap map | 交换映射表 | 描述交换区可用空间的数据结构 |
 | swapping | 交换 | 教材另有“对换”，本表统一“交换” |
 | swapping process（swapper） | 交换进程 | 0 号进程 |
-| swap space | 交换空间 | FreeBSD 中文使用手册译法 |
+| swap space | 交换空间 | 词汇表作 swap area（交换区）的同义词；FreeBSD 中文使用手册译法 |
 | symbolic link | 符号链接 | |
 | synchronization | 同步 | |
 | synchronous | 同步 | |
@@ -617,7 +617,7 @@
 | user identifier (UID) | 用户标识符（UID） | 16 位非负整数，唯一标识用户 |
 | user mode | 用户态 | 特权最低的处理机访问模式 |
 | user page table | 用户页表 | 映射进程虚拟地址空间；位于内核虚拟地址空间中 |
-| user-request routine | 用户请求例程 | protosw 的 pr_usrreq |
+| user-request routine | 用户请求例程 | `protosw` 的 `pr_usrreq` |
 | user structure | user 结构 | 每活动进程一份；进程换出时移往辅存；又称 u. 区、user 区 |
 | utility | 实用程序 | |
 | VAX | — | 机型名保留 |
