@@ -39,7 +39,7 @@
 
 * [4 进程管理](di-er-bu-fen-jin-cheng/4.-jin-cheng-guan-li.md)
 * [4.1 引言](di-er-bu-fen-jin-cheng/4.1.-yin-yan.md)
-* [4.2 多道程序设计](di-er-bu-fen-jin-cheng/4.2.-duo-dao-cheng-xu-she-ji.md)
+* [4.2 进程状态](di-er-bu-fen-jin-cheng/4.2.-jin-cheng-zhuang-tai.md)
 * [4.3 上下文切换](di-er-bu-fen-jin-cheng/4.3.-shang-xia-wen-qie-huan.md)
 * [4.4 进程调度](di-er-bu-fen-jin-cheng/4.4.-jin-cheng-diao-du.md)
 * [4.5 进程创建](di-er-bu-fen-jin-cheng/4.5.-jin-cheng-chuang-jian.md)
