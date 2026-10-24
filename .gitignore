@@ -150,3 +150,12 @@ vite.config.ts.timestamp-*
 /state
 /.workbuddy
 /script
+
+# 本项目本地工作副本（不随仓库分发）
+/en/
+/2.pdf
+*.pdf
+
+# Spec Kit 本地集成（可由 specify init 重建；specs/ 任务书仍入库）
+/.specify/
+/.zcode/
