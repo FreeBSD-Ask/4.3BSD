@@ -39,7 +39,7 @@
 * [ ] Check 29: 全部内容页 `py script/check_bold.py` 违例 0（`**加粗**` 两侧恰好一个半角空格）。（来源：FR-008／SC-003、T080）
 * [ ] Check 30: 全部内容页 markdownlint-cli2（`.github/.markdownlint.json` 配置，排除 en/、script/、node_modules/）违例 0。（来源：FR-008／SC-003、T080）
 * [ ] Check 31: 抽 30 处中西文混排（含书名号内），中英文/中文与数字间均有半角空格。（来源：FR-008）
-* [ ] Check 32: 全书检索 `<div`/`<span`/`xref:`/`link:`/行尾 `+` 软换行，命中 0；正文无 HTML。（来源：FR-008）
+* [ ] Check 32: 全书检索 `xref:`/`link:`/行尾 `+` 软换行，命中 0；HTML 仅允许出现在复杂表格（`<table>` 及其子元素），其余位置命中 0。（来源：FR-008）
 * [ ] Check 33: 正文抽 20 处路径与 IP，均为加粗而非反引号；代码块内路径保持原样。（来源：FR-008）
 * [ ] Check 34: 全书检索"您"，命中 0（第二人称统一"你"）。（来源：FR-008）
 * [ ] Check 35: `fu-lu/ci-hui-biao.md` 覆盖 `en/15-glossary.txt` 全部词条（词条计数一致），开头有编排方式译注。（来源：FR-010／T056）
