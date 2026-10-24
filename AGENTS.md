@@ -8,7 +8,7 @@
 
 * 原文：仓库根目录的 **2.pdf**（496 页）。该文件 **不纳入版本控制**（见 `.gitignore`），不属于待翻译产物。
 * **2.pdf 是扫描件**（ScanSnap 扫描 + Adobe ClearScan OCR）：其内嵌文本层 **完全不信任**（2026-10-24 用户裁定），存在系统性识别错误（`I/O`→`1/0`、`Inode`→`!node`、`45`→`4S` 等）。一切内容以 **页面图像** 为唯一权威源；文本层至多用于页码定位与结构普查，**禁止** 作为任何译文内容的来源。
-* `en/` — 英文原文，由 **1–2 路并行子代理读取页面渲染图视觉转录** 生成（见“视觉转录工作流”）。**不要修改 `en/` 中已定稿的内容**，不要将其当作成品引用。**`en/` 与 `script/` 均已被 `.gitignore` 排除，只存在于本地工作副本，不随仓库分发**；新克隆仓库需先准备 PDF 并重跑渲染与转录管线重建。
+* `en/` — 英文原文，由 **GLM 视觉工具链逐页识别页面渲染图视觉转录** 生成（见“视觉转录工作流”）。**不要修改 `en/` 中已定稿的内容**，不要将其当作成品引用。**`en/` 与 `script/` 均已被 `.gitignore` 排除，只存在于本地工作副本，不随仓库分发**；新克隆仓库需先准备 PDF 并重跑渲染与转录管线重建。
 * **`.github/workflows/` 下的 CI 工作流全部沿用自本社区其他项目，动作要与其约定一致，不得改动**：
   * `sync-headers.yml` — 每次推送后把各 `.md` 文件的 H1 强制改成 `SUMMARY.md` 中对应条目的文字（方向：SUMMARY → 文件 H1）。改标题只需改 `SUMMARY.md`，H1 由 CI 自动同步；本地改动后若 H1 与 SUMMARY 不一致，推送后会被 CI 覆盖。
   * `mulu.yml` — `SUMMARY.md` 变动后自动重新生成 `mu-lu.md`（首行改为 `# 目录`）。**不要手动编辑 `mu-lu.md`**。
@@ -25,8 +25,8 @@
 1. 书名《4.3BSD UNIX 操作系统的设计与实现》，首次出现处括注英文原名。
 2. 书末 Glossary（词汇表，印刷 413–450）**全文翻译为附录**。
 3. 书末 Index（索引，印刷 451–496）**转译为中文术语索引**：词条译为中文（保留英文原词）、按拼音排序、每个词条链接到对应章节页面；原索引的 see/see also 关系在中文词条间重建，不保留印刷页码。
-4. **完全不信任 OCR 文本层**；原文由子代理读页面图像视觉转录获得。
-5. 视觉转录以 **1–2 路并行子代理** 执行。
+4. **完全不信任 OCR 文本层**；原文由视觉转录页面图像获得。
+5. 视觉转录执行方式（当日两次变更）：先定 1–2 路并行子代理，后提至 20 路，最终定案为 **复用 librebsd 的 GLM 视觉工具链**（`D:\librebsd\script\_glm_line_20261006.py`，glm-5.3-flash + key 池轮替），由 `script/ocr_en.py` 20 路并发逐页转录、`script/ocr_verify.py` 双层加强复核。子代理派发仅在工具链不可用时作为备份。
 
 ## 原文来源与重新提取
 
@@ -150,11 +150,12 @@ py script/render_pages.py 268 277 300  # 代码密集页用 300 DPI
 
 ### 视觉转录工作流（en/ 的唯一合法来源）
 
-1. `py script/render_pages.py <起页> <止页> [DPI]` 渲染所需页面到 `script/pages/`。
-2. 派 **1–2 路** general-purpose 子代理，每路领取一个章区间，读取 `script/pages/` 的 PNG，按 `specs/001-43bsd-chinese-translation/contracts/en-transcription.md` 的标记语法（`[[PAGE n]]`、`[FIGURE]`、`[TABLE]`、`[CODE]`、`[UNCLEAR]`）**直接写入** `en/NN-….txt`。
-3. 子代理只向主会话回报：起止页、图表代码清单、`[UNCLEAR]` 总数；**不回传全文**。
-4. 主会话职责：裁决 `[UNCLEAR]`（回看 PNG）、抽 3 页与图像逐词比对、确认每页恰一个页码标记且单调递增。
-5. **同一时刻在飞的子代理不得超过 2 路**（2026-10-24 用户裁定）。
+1. `py script/render_pages.py <起页> <止页> [DPI]` 渲染所需页面到 `script/pages/`（正文默认 200 DPI，代码密集章 300 DPI）。
+2. `py script/ocr_en.py --all --workers 20`：复用 librebsd 的 GLM 视觉工具链，20 路并发逐页转录（可断点续跑，单页试跑用 `--probe <页码>`）。产物为 `script/ocr_out/p<页码>.json`（含转录文本与页码自检）。
+3. `py script/ocr_verify.py --lint` 第一层文本筛查（中文渗漏、[CODE] 配对、篇幅异常、页码校验、重复模板）；`--visual` 第二层视觉对页复核（违例页全查 + 通过页抽样，fail 页自动回写修正稿）。**加强复核由主理人 2026-10-24 指令确定，为固定环节**。
+4. 复核不合格页重转录并复验直至清零，然后 `py script/ocr_en.py --assemble` 装配出 `en/00-toc.txt … en/16-index.txt`（带 `[[PAGE n]]` 标记）。
+5. 主会话抽验：随机开几页 PNG 与装配稿逐词比对；确认每页恰一个页码标记且单调递增。
+6. 转录标记语法（`[[PAGE n]]`、`[FIGURE]`、`[TABLE]`、`[CODE]`、`[UNCLEAR]`）见 `specs/001-43bsd-chinese-translation/contracts/en-transcription.md`。
 
 ### 新内容翻译
 
@@ -227,7 +228,22 @@ py script/render_pages.py 268 277 300  # 代码密集页用 300 DPI
 
 * **结构对比**（`script/compare_structure.py`）：对比 `SUMMARY.md` 章节树与原书目录，输出差异清单。
 
-* **插图提取**（`script/extract_figures.py`）：提取 PDF 嵌入图像，甄别正文插图导出到 `.gitbook/assets/`，生成页码对照 `script/figures-map.md`。
+* **插图提取**（`script/extract_figures.py`）：提取 PDF 嵌入图像，甄别正文插图导出到 `script/figures-tmp/` 候选目录（人工甄别后按 `fig-<章>-<序号>-<slug>.png` 移入 `.gitbook/assets/`）。
+
+* **视觉转录**（`script/ocr_en.py`）：GLM 视觉工具链逐页转录 + 断点续跑 + `--assemble` 装配 en/：
+
+  ```sh
+  py script/ocr_en.py --probe vii        # 单页试跑
+  py script/ocr_en.py --all --workers 20 # 全书转录（可断点续跑）
+  py script/ocr_en.py --assemble         # 装配 en/*.txt
+  ```
+
+* **转录复核**（`script/ocr_verify.py`）：双层加强复核（文本筛查 + 视觉对页）：
+
+  ```sh
+  py script/ocr_verify.py --lint                    # 第一层
+  py script/ocr_verify.py --visual --sample 0.10    # 两层全跑
+  ```
 
 * **markdownlint**（配置 `.github/.markdownlint.json`）：本地已装 `markdownlint-cli2`，在仓库根目录执行：
 
