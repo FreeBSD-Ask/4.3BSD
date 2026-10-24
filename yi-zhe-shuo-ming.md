@@ -28,6 +28,7 @@
 
 | 英文 | 中文 | 备注 |
 | ---- | ---- | ---- |
+| 协调世界时（UTC） | Universal Coordinated Time → 协调世界时（UTC） | 标准译名 |
 | 2MSL timer | 2MSL 计时器 | TCP TIME_WAIT 状态 |
 | 4.2BSD fast filesystem | 快速文件系统 | FFS |
 | absolute pathname | 绝对路径名 | 见 pathname（路径名） |
@@ -90,6 +91,7 @@
 | bus adapter | 总线适配器 | |
 | byte | 字节 | |
 | cache | 高速缓存 | |
+| callout queue | callout 队列 | 超时事件队列；差值排序，见 3.4 节 |
 | canonical mode | 规范模式 | 终端行规程模式 |
 | capability | 权能 | 呈现给系统以获取对象访问权的数据 |
 | carrier | 载波 | modem 控制语境 |
@@ -153,6 +155,7 @@
 | data path | 数据通路 | |
 | data segment | 数据段 | 进程中存放程序初始化与未初始化数据的部分 |
 | data structure | 数据结构 | |
+| daylight saving time | 夏令时 | |
 | dbx | — | 调试器名保留 |
 | debugging | 调试 | |
 | decapsulation | 解封装 | |
@@ -194,6 +197,7 @@
 | errno | — | 错误码变量名保留 |
 | error-message buffer | 消息缓冲区 | 见 message buffer；内核消息环形缓冲区 |
 | Ethernet | 以太网 | |
+| exec header | exec 头部 | 可执行文件中魔数之后的尺寸信息头 |
 | fan-in / fan-out | 扇入／扇出 | |
 | fault | 故障 | page fault 译“缺页” |
 | fault rate | 缺页率 | |
@@ -243,6 +247,7 @@
 | host | 主机 | |
 | Host Dead message | 主机失效报文 | ARPANET/ICMP 报文 |
 | host identifier | 主机标识符 | sethostid 设置的 32 位值，用于构造全网唯一标识 |
+| host name | 主机名 | |
 | Host Unreachable message | 主机不可达报文 | |
 | ICMP | 网际控制报文协议（ICMP） | |
 | IDP | 网际数据报协议（IDP） | XNS |
@@ -266,6 +271,7 @@
 | Internet Protocol (IP) | 网际协议（IP） | |
 | internetwork | 互连网 | 视上下文；谢希仁《计算机网络》译法，与 Internet 专名区分 |
 | Internetwork Datagram Protocol (IDP) | 网际数据报协议（IDP） | XNS |
+| interpreter | 解释程序 | #! 脚本机制 |
 | interprocess communication (IPC) | 进程间通信（IPC） | 4.3BSD 中通信在套接字之间而非进程之间进行 |
 | interrupt | 中断 | |
 | interrupt handler | 中断处理程序 | |
@@ -273,6 +279,7 @@
 | interrupt stack | 中断栈 | 系统级运行时栈，独立于各进程的内核栈 |
 | interrupt vector | 中断向量 | |
 | interrupt-vector table | 中断向量表 | |
+| interval timer | 间隔计时器 | |
 | I/O | 输入/输出（I/O） | 见 Input/Output |
 | ioctl | — | 系统调用名保留 |
 | I/O page | I/O 页 | 地址空间中可访问 I/O 设备控制寄存器的区段；VAX 上为每个 UNIBUS 适配器地址空间的末 8 KB |
@@ -448,6 +455,7 @@
 | /proc filesystem | /proc 文件系统 | 以文件系统接口访问活动进程，用于构造进程调试设施；第八版 UNIX 引入 |
 | proc structure | proc 结构 | 结构体名保留 |
 | profiling | 剖析 | 计时剖析 |
+| profiling timer | 剖析计时器 | SIGPROF |
 | protocol | 协议 | |
 | protocol control block（PCB） | 协议控制块 | 与进程控制块按语境区分 |
 | protocol family | 协议族 | |
@@ -473,6 +481,8 @@
 | Ready for Next Message (RFNM) | 就绪接收下一报文（RFNM） | ARPANET 流控 |
 | real GID | 实际组标识符 | |
 | real group identifier (real GID) | 实际组标识符 | |
+| real-time clock | 实时时钟 | |
+| real-time timer | 实时计时器 | SIGALRM |
 | real UID | 实际用户标识符 | |
 | real user identifier (real UID) | 实际用户标识符 | |
 | receive window | 接收窗口 | |
@@ -561,6 +571,7 @@
 | soft link | 符号链接 | 即 symbolic link |
 | software interrupt | 软件中断 | VAX 支持 15 级，经 SIRR 寄存器请求 |
 | software-interrupt process | 软件中断进程 | |
+| solar time | 太阳时 | |
 | source-code control | 源码控制 | |
 | sparse address space | 稀疏地址空间 | |
 | special file | 特殊文件 | 见 device special file（设备特殊文件） |
@@ -590,6 +601,7 @@
 | subnetwork | 子网 | |
 | superblock | 超级块 | |
 | superuser | 超级用户 | UID 为 0 的用户，登录名通常为 `root` |
+| supplementary groups | 补充组 | 附加 GID 数组 |
 | svpctx | — | VAX 指令：保存进程上下文，保留 |
 | swap | 交换 | |
 | swap area | 交换区 | |
@@ -618,6 +630,7 @@
 | terminal multiplexer | 终端多路复用器 | DZ-11 等 |
 | text segment | 正文段 | 存放机器指令的段，通常只读且可共享 |
 | text structure | 正文结构 | 内核管理共享正文段的数据结构 |
+| text table | 正文表 | 协调共享正文段 |
 | thrashing | 抖动 | 内存需求远超可用内存，系统忙于系统任务而无暇执行应用代码 |
 | tick | 时钟节拍 | |
 | tightly coupled system | 紧耦合系统 | |
@@ -627,6 +640,7 @@
 | timer backoff | 计时器退避 | TCP 重传超时倍增 |
 | timesharing | 分时 | |
 | time slice | 时间片 | |
+| timing wheel | 时间轮 | Varghese & Lauck 1987 |
 | TLB | 转换检测缓冲区（TLB） | |
 | token ring | 令牌环 | |
 | top half | 上半部 | 因系统调用或陷阱同步调用的内核例程集合，可以睡眠；与下半部相对 |
@@ -672,8 +686,11 @@
 | virtual address space | 虚拟地址空间 | |
 | virtual machine | 虚拟机 | |
 | virtual memory | 虚拟存储 | 4.4BSD 中译本语系 |
+| virtual timer | 虚拟计时器 | SIGVTALRM |
+| voluntary / involuntary context switch | 自愿／非自愿上下文切换 | |
 | wait | — | 系统调用名保留 |
 | wait channel | 等待通道 | 标识进程所等事件的值（常为相关结构地址） |
+| watchdog timer | 看门狗计时器 | |
 | wildcard route | 通配路由 | |
 | window | 窗口 | TCP 语境 |
 | window probe | 窗口探测报文 | TCP 零窗口探测 |
@@ -683,6 +700,7 @@
 | workstation | 工作站 | |
 | XNS domain | XNS 域 | 施乐网络系统通信域 |
 | X/OPEN Portability Guide | 《X/OPEN 可移植性指南》 | |
+| zero-filled | 零填充 | |
 | zombie process | 僵尸进程 | |
 
 ## 人名表（一律不音译，首次出现以同位语补充身份）
