@@ -28,7 +28,7 @@
 
 | 英文 | 中文 | 备注 |
 | ---- | ---- | ---- |
-| 协调世界时（UTC） | Universal Coordinated Time → 协调世界时（UTC） | 标准译名 |
+| Universal Coordinated Time (UTC) | 协调世界时（UTC） | 标准译名 |
 | 2MSL timer | 2MSL 计时器 | TCP TIME_WAIT 状态 |
 | 4.2BSD fast filesystem | 快速文件系统 | FFS |
 | absolute pathname | 绝对路径名 | 见 pathname（路径名） |
