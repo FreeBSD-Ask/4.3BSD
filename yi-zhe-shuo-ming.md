@@ -46,6 +46,7 @@
 | ARPANET Host Access Protocol | ARPANET 主机访问协议 | 主机与 ARPANET PSN 间通信所用协议 |
 | assembler | 汇编器 | |
 | association | 关联 | 12.1 节，端口与地址的关联 |
+| Association for Computing Machinery (ACM) | （美国）计算机协会（ACM） | 图灵奖颁发机构 |
 | AST | 异步系统陷阱（AST） | |
 | asynchronous | 异步 | |
 | asynchronous system trap (AST) | 异步系统陷阱（AST） | |
@@ -54,10 +55,13 @@
 | autoconfiguration phase | 自动配置阶段 | |
 | background process | 后台进程 | |
 | backing storage | 后备存储 | 即 backing store；调页与交换时存放被换出对象，见 secondary storage |
+| backward compatibility | 向后兼容 |  |
 | bad sector | 坏扇区 | |
 | bad-sector forwarding | 坏扇区转发 | |
 | bad-sector table | 坏扇区表 | |
+| Berkeley Software Distribution (BSD) | 伯克利软件发行版（BSD） | BSD 之名由此来 |
 | Berknet | — | Berkeley 早期网络软件名保留 |
+| beta test | beta 测试 |  |
 | block（存储） | 块 | 磁盘/文件系统块 |
 | block（等待） | 阻塞 | 进程状态；按义项区分 |
 | block device | 块设备 | |
@@ -109,6 +113,7 @@
 | communication domain | 通信域 | 即 domain（通信域） |
 | communication protocol | 通信协议 | |
 | compiler | 编译器 | |
+| Computer Systems Research Group (CSRG) | 计算机系统研究组（CSRG） | 伯克利 BSD 开发团队 |
 | configuration file | 配置文件 | |
 | configuration procedure | 配置过程 | |
 | congestion | 拥塞 | |
@@ -146,6 +151,8 @@
 | debugging | 调试 | |
 | decapsulation | 解封装 | |
 | demand paging | 请求调页 | 教材通行译法 |
+| demultiplex / demultiplexing | 解复用 | 与多路复用相对 |
+| deprecated | 已弃用 |  |
 | descriptor | 描述符 | open 或 socket、pipe 等创建时系统返回的整数 |
 | descriptor table | 描述符表 | 每进程一张；又称进程打开文件表 |
 | device | 设备 | |
@@ -167,6 +174,7 @@
 | domain（通信） | 通信域 | socket domain |
 | double (doubly) linked list | 双向链表 | |
 | double indirect block | 二级间接块 | |
+| Draft International Standard | 国际标准草案 | ISO DIS |
 | ECC correction | ECC 纠错 | |
 | effective GID | 有效组标识符 | 见 effective group identifier |
 | effective group identifier (effective GID) | 有效组标识符 | 执行 setgid 程序时设置；用于文件系统组权限检查 |
@@ -180,8 +188,10 @@
 | errno | — | 错误码变量名保留 |
 | error-message buffer | 消息缓冲区 | 见 message buffer；内核消息环形缓冲区 |
 | Ethernet | 以太网 | |
+| fan-in / fan-out | 扇入／扇出 |  |
 | fault | 故障 | page fault 译“缺页” |
 | fault rate | 缺页率 | |
+| Federal Information Processing Standard (FIPS) | 联邦信息处理标准（FIPS） | NBS 发布 |
 | fetch policy | 取页策略 | 何时取页调入内存 |
 | ffs | 快速文件系统（FFS） | |
 | field | 字段 | |
@@ -218,6 +228,7 @@
 | hard limit | 硬限制 | 不可超越；与软限制相对 |
 | hard link | 硬链接 | |
 | hard lock | 强制锁 | |
+| Harvard University | 哈佛大学 |  |
 | hash | 哈希 | |
 | heap | 堆 | |
 | high watermark | 高水位线 | |
@@ -241,6 +252,7 @@
 | interactive program | 交互式程序 | |
 | interface | 接口 | |
 | Interface Message Processor (IMP) | 接口报文处理机（IMP） | |
+| International Organization for Standardization (ISO) | 国际标准化组织（ISO） |  |
 | Internet（DARPA Internet） | Internet | 专名保留；泛指互联网时译“互联网” |
 | Internet Control Message Protocol (ICMP) | 网际控制报文协议（ICMP） | |
 | internet domain | 网际域 | 支持 DARPA Internet 体系结构的通信域 |
@@ -288,11 +300,13 @@
 | load average | 平均负载 | 就绪与等待磁盘 I/O 进程数的 1 分钟均值 |
 | locality | 局部性 | |
 | locality of reference | 引用局部性 | |
+| local network | 本地网络 |  |
 | lock | 锁 | |
 | logical block | 逻辑块 | 文件线性长度按文件系统块大小划分得到的块 |
 | logical drive partitions | 逻辑驱动器分区 | |
 | logical unit | 逻辑单元 | 自动配置发现的逻辑部件号 |
 | login | 登录 | /bin/login 保留路径 |
+| long-haul network | 远程网络 |  |
 | long-term–scheduling algorithm | 长期调度算法 | |
 | loop | 页环 | 存储管理中由全局 CLOCK 算法管理的常驻页集合 |
 | lossy | 易丢包的 | |
@@ -301,6 +315,7 @@
 | machine-dependent | 与机器相关的 | |
 | machine-independent | 与机器无关的 | |
 | magic number | 魔数 | |
+| mailing list | 邮件列表 |  |
 | main memory | 主存 | |
 | major-device number | 主设备号 | |
 | mapped | 已映射的 | |
@@ -310,6 +325,7 @@
 | MASSBUS adapter | MASSBUS 适配器 | |
 | MASSBUS-adapter support routines | MASSBUS 适配器支持例程 | |
 | MASSBUS unit number | MASSBUS 部件号 | |
+| master copy | 主副本 |  |
 | master device | 主设备 | |
 | maximum segment lifetime (MSL) | 最长报文段生存期（MSL） | |
 | mbuf | — | 内存缓冲区，保留 mbuf |
@@ -326,12 +342,14 @@
 | mode | 模式 | |
 | modem | 调制解调器 | |
 | modem control | 调制解调器控制 | RS-232 异步串行线路上可靠建立与拆除连接的信号支持 |
+| moderated newsgroup | 仲裁新闻组 |  |
 | mount / unmount | 挂载／卸载 | 社区通行；旧教材“安装/拆卸”不采用 |
 | MSL | 最长报文段生存期（MSL） | |
 | multilevel feedback queue | 多级反馈队列 | 4.3BSD 调度算法 |
 | multiplexed file | 多路复用文件 | 第七版 UNIX 的 IPC 文件类型 |
 | multiplexing | 多路复用 | |
 | multiprogramming | 多道程序设计 | |
+| National Bureau of Standards (NBS) | 美国国家标准局（NBS） | 后更名 NIST |
 | network | 网络 | |
 | network address | 网络地址 | |
 | network architecture | 网络体系结构 | |
@@ -430,10 +448,12 @@
 | PSL | 处理机状态长字（PSL） | |
 | PSN | 分组交换节点（PSN） | |
 | PTE | 页表项（PTE） | 见 page-table entry |
+| Purdue University | 普渡大学 |  |
 | pure demand paging | 纯请求调页 | |
 | queue | 队列 | |
 | queue limiting | 队列限长 | 11.6 节 |
 | quota | 配额 | |
+| Rand Corporation | 兰德公司 |  |
 | raw device | 裸设备 | |
 | raw-device interface | 裸设备接口 | |
 | raw I/O | 裸 I/O | |
@@ -454,6 +474,7 @@
 | reference string | 引用串 | |
 | register save mask | 寄存器保存掩码 | VAX 调用约定 |
 | relative pathname | 相对路径名 | 见 pathname |
+| release engineering | 发布工程 |  |
 | reliably delivered message socket | 可靠投递报文套接字 | SOCK_SEQPACKET 之前身 |
 | relocation | 重定位 | |
 | replacement algorithm | 置换算法 | |
@@ -529,6 +550,7 @@
 | soft link | 符号链接 | 即 symbolic link |
 | software interrupt | 软件中断 | VAX 支持 15 级，经 SIRR 寄存器请求 |
 | software-interrupt process | 软件中断进程 | |
+| sparse address space | 稀疏地址空间 |  |
 | special file | 特殊文件 | 见 device special file（设备特殊文件） |
 | spin loop | 自旋循环 | |
 | SPP | 顺序分组协议（SPP） | |
@@ -543,12 +565,14 @@
 | standard output | 标准输出 | |
 | start routine | 启动例程 | |
 | state | 状态 | |
+| steering committee | 指导委员会 |  |
 | sticky bit | 粘滞位 | inode 中指示正文段按粘滞正文处理的位 |
 | sticky text | 粘滞正文 | 保存在交换区以便复用的正文段 |
 | storage | 存储 | |
 | stream I/O system | 流 I/O 系统 | |
 | stream socket | 流套接字 | SOCK_STREAM |
 | structure | 结构体 | C 语境 |
+| stub | 桩 | 汇编语言桩 |
 | subnetwork | 子网 | |
 | superblock | 超级块 | |
 | superuser | 超级用户 | UID 为 0 的用户，登录名通常为 `root` |
@@ -582,6 +606,7 @@
 | text structure | 正文结构 | 内核管理共享正文段的数据结构 |
 | thrashing | 抖动 | 内存需求远超可用内存，系统忙于系统任务而无暇执行应用代码 |
 | tick | 时钟节拍 | |
+| tightly coupled system | 紧耦合系统 |  |
 | timeout | 超时 | |
 | time quantum | 时间量 | 即时间片 |
 | timer | 计时器 | |
@@ -589,6 +614,7 @@
 | timesharing | 分时 | |
 | time slice | 时间片 | |
 | TLB | 转换检测缓冲区（TLB） | |
+| token ring | 令牌环 |  |
 | top half | 上半部 | 因系统调用或陷阱同步调用的内核例程集合，可以睡眠；与下半部相对 |
 | trace trap | 跟踪陷阱 | ptrace 断点 |
 | track | 磁道 | |
@@ -601,6 +627,7 @@
 | triple indirect block | 三级间接块 | |
 | tty | — | 保留 tty |
 | tty driver | tty 驱动 | 实现终端设备语义的软件模块，由若干行规程构成 |
+| Turing Award | 图灵奖 | ACM |
 | type-ahead | 预键入 | 终端输入的提前缓冲 |
 | u-dot | u. 结构 | 即 user 结构 |
 | UDP | 用户数据报协议（UDP） | 见 User Datagram Protocol |
@@ -610,7 +637,9 @@
 | UNIBUS adapter | UNIBUS 适配器 | |
 | UNIBUS / MASSBUS | — | VAX 总线名保留；UNIBUS 用于中低速外设，MASSBUS 用于高速大容量存储外设 |
 | unit start routine | 部件启动例程 | |
+| University of Illinois | 伊利诺伊大学 |  |
 | UNIX domain | UNIX 域 | 本地通信协议族 |
+| UNIX Support Group (USG) | UNIX 支持组（USG） | AT&T 内部 |
 | urgent data | 紧急数据 | TCP 紧急指针/带外数据 |
 | user area | 用户区 | 即 user 结构 |
 | User Datagram Protocol (UDP) | 用户数据报协议（UDP） | DARPA Internet 的简单不可靠数据报协议 |
@@ -638,6 +667,7 @@
 | working set | 工作集 | 一段时间内被引用过的页的集合 |
 | workstation | 工作站 | |
 | XNS domain | XNS 域 | 施乐网络系统通信域 |
+| X/OPEN Portability Guide | 《X/OPEN 可移植性指南》 | |
 | zombie process | 僵尸进程 | |
 
 ## 人名表（一律不音译，首次出现以同位语补充身份）
