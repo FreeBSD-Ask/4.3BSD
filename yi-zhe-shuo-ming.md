@@ -31,6 +31,7 @@
 | 2MSL timer | 2MSL 计时器 | TCP TIME_WAIT 状态 |
 | 4.2BSD fast filesystem | 快速文件系统 | FFS |
 | absolute pathname | 绝对路径名 | 见 pathname（路径名） |
+| access method | 访问方法 | |
 | access rights | 访问权限 | 4.3BSD IPC 支持随报文传递访问权 |
 | accounting | 记账 | 系统记账（system accounting） |
 | adb | — | 调试器名保留 |
@@ -39,6 +40,7 @@
 | Address Resolution Protocol (ARP) | 地址解析协议（ARP） | 网络地址间的动态映射，如 DARPA Internet 地址映射为以太网地址 |
 | address space | 地址空间 | |
 | address translation | 地址转换 | 多由硬件实现 |
+| address-translation cache | 地址转换高速缓存 | |
 | advisory lock | 劝告锁 | 仅显式请求才强制，与强制锁相对 |
 | AGE buffer list | AGE 缓冲区链表 | 存放内容尚未证明有用的缓冲区（如预读块） |
 | ARP | 地址解析协议（ARP） | 见 Address Resolution Protocol |
@@ -59,6 +61,8 @@
 | bad sector | 坏扇区 | |
 | bad-sector forwarding | 坏扇区转发 | |
 | bad-sector table | 坏扇区表 | |
+| basename | 基名 | basename.extension 文件名惯例 |
+| baud rate | 波特率 | |
 | Berkeley Software Distribution (BSD) | 伯克利软件发行版（BSD） | BSD 之名由此来 |
 | Berknet | — | Berkeley 早期网络软件名保留 |
 | beta test | beta 测试 | |
@@ -134,9 +138,11 @@
 | core dump | 核心转储 | 见 core file、crash dump |
 | core file | core 文件 | 进程收到特定信号时系统生成的状态记录文件，名为 core |
 | core map | 核心映射表 | 核心映射表（cmap）；词汇表定义：内核管理主存的数据结构，主存每簇一项 |
+| coroutine | 协程 | |
 | CPU | 中央处理器（CPU） | 见 central processing unit |
 | crash | 崩溃 | 系统意外失效 |
 | crash dump | 崩溃转储 | 崩溃时刻机器状态的记录 |
+| critical section | 临界区 | |
 | CRT | 阴极射线管（CRT） | |
 | current working directory | 当前工作目录 | |
 | cylinder | 柱面 | |
@@ -306,6 +312,7 @@
 | logical drive partitions | 逻辑驱动器分区 | |
 | logical unit | 逻辑单元 | 自动配置发现的逻辑部件号 |
 | login | 登录 | /bin/login 保留路径 |
+| login shell | 登录 shell | |
 | long-haul network | 远程网络 | |
 | long-term–scheduling algorithm | 长期调度算法 | |
 | loop | 页环 | 存储管理中由全局 CLOCK 算法管理的常驻页集合 |
@@ -331,6 +338,7 @@
 | mbuf | — | 内存缓冲区，保留 mbuf |
 | memory | 存储器／内存 | 按语境：主存实体用“内存”，抽象层次用“存储器” |
 | memory address | 内存地址 | 分物理地址与虚拟地址两类 |
+| memory allocator | 内存分配器 | |
 | memory free list | 空闲表 | 见 free list |
 | memory management | 存储管理 | 4.4BSD 官方中译本第 5 章标题 |
 | memory-management system | 存储管理系统 | |
@@ -398,6 +406,7 @@
 | paging | 调页 | 页被引用时调入，被置换时移出 |
 | panic | 恐慌 | 内核检测到的不可恢复故障，4.3BSD 自动重启恢复 |
 | parent process | 父进程 | |
+| parity checking | 奇偶校验 | |
 | partition | 分区 | |
 | pathname | 路径名 | 以斜杠分隔的字符串；行首斜杠为绝对路径名，否则为相对路径名 |
 | PCB | 进程控制块（PCB） | 见 process control block（进程控制块）；与协议控制块按语境区分 |
@@ -454,11 +463,13 @@
 | queue limiting | 队列限长 | 11.6 节 |
 | quota | 配额 | |
 | Rand Corporation | 兰德公司 | |
+| raster plotter | 光栅绘图仪 | |
 | raw device | 裸设备 | |
 | raw-device interface | 裸设备接口 | |
 | raw I/O | 裸 I/O | |
 | raw mode | 原始模式 | 输入即收、不加解释的终端模式 |
 | raw socket | 原始套接字 | 直接访问低层通信协议的套接字 |
+| raw-socket interface | 裸套接字接口 | |
 | Ready for Next Message (RFNM) | 就绪接收下一报文（RFNM） | ARPANET 流控 |
 | real GID | 实际组标识符 | |
 | real group identifier (real GID) | 实际组标识符 | |
@@ -550,6 +561,7 @@
 | soft link | 符号链接 | 即 symbolic link |
 | software interrupt | 软件中断 | VAX 支持 15 级，经 SIRR 寄存器请求 |
 | software-interrupt process | 软件中断进程 | |
+| source-code control | 源码控制 | |
 | sparse address space | 稀疏地址空间 | |
 | special file | 特殊文件 | 见 device special file（设备特殊文件） |
 | spin loop | 自旋循环 | |
@@ -564,6 +576,7 @@
 | standard input | 标准输入 | |
 | standard output | 标准输出 | |
 | start routine | 启动例程 | |
+| start-up script | 启动脚本 | |
 | state | 状态 | |
 | steering committee | 指导委员会 | |
 | sticky bit | 粘滞位 | inode 中指示正文段按粘滞正文处理的位 |
@@ -572,6 +585,7 @@
 | stream I/O system | 流 I/O 系统 | |
 | stream socket | 流套接字 | SOCK_STREAM |
 | structure | 结构体 | C 语境 |
+| structured device | 有结构设备 | 即块设备；与无结构设备相对 |
 | stub | 桩 | 汇编语言桩 |
 | subnetwork | 子网 | |
 | superblock | 超级块 | |
@@ -640,6 +654,7 @@
 | University of Illinois | 伊利诺伊大学 | |
 | UNIX domain | UNIX 域 | 本地通信协议族 |
 | UNIX Support Group (USG) | UNIX 支持组（USG） | AT&T 内部 |
+| unstructured device | 无结构设备 | 即字符设备 |
 | urgent data | 紧急数据 | TCP 紧急指针/带外数据 |
 | user area | 用户区 | 即 user 结构 |
 | User Datagram Protocol (UDP) | 用户数据报协议（UDP） | DARPA Internet 的简单不可靠数据报协议 |
