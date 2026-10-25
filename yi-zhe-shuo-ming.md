@@ -440,6 +440,7 @@
 | privileged instruction | 特权指令 | |
 | probe routine | 探测例程 | 自动配置阶段检测设备存在 |
 | probing | 探测 | |
+| purge | 清洗 | 指清洗高速缓存/地址转换缓存中的表项（全书统一） |
 | process | 进程 | |
 | Process Control Block Base (PCBB) | 进程控制块基址（PCBB） | |
 | process control block (PCB) | 进程控制块 | VAX 上含硬件 PCB 与紧随其后的软件 PCB；与协议控制块按语境区分 |
