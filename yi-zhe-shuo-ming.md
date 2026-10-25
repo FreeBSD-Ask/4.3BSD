@@ -352,6 +352,7 @@
 | memory-management system | 存储管理系统 | |
 | memory-management unit | 存储管理单元 | MMU |
 | memory-mapped I/O architecture | 存储映射 I/O 体系结构 | |
+| moving-head disk | 动臂磁盘 | 磁头沿盘面径向移动寻道的磁盘机（5.1/8.1/8.6 统一译法） |
 | message | 消息 | |
 | message buffer | 消息缓冲区 | 记录全部内核消息的环形缓冲区，可经 /dev/klog 读取 |
 | minor-device number | 次设备号 | |
