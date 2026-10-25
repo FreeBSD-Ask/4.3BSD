@@ -214,6 +214,7 @@
 | file offset | 文件偏移量 | |
 | file structure | file 结构 | 内核中记录打开文件描述符信息的结构体 |
 | filesystem | 文件系统 | |
+| filesystem cache | 文件系统缓存 | 原书 7.2/5.11 节的用词，与 buffer cache（缓冲区高速缓存）指同一物；原书两词并用，译文按原文区分，不得改作“缓冲区高速缓存” |
 | fill-on-demand | 按需填充 | |
 | fill-on-demand klustering | 按需填充成组 | 缺页时连同相邻页一并调入的预调页手段 |
 | fill-on-demand page fault | 按需填充缺页 | 某页的首次缺页，须读文件系统或分配零页解决 |
