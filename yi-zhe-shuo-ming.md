@@ -305,6 +305,7 @@
 | ldpctx | — | VAX 指令：装载进程上下文，保留 |
 | least recently used (LRU) | 最近最久未使用（LRU） | |
 | line discipline | 行规程 | Linux 内核文档中文社区与 dog250 经典文章通行 |
+| line-feed (LF) | 行进给 | 即换行字符，ASCII 0x0A |
 | line mode | 行模式 | 见 cooked mode（规范模式） |
 | link | 链接 | |
 | linked list | 链表 | |
