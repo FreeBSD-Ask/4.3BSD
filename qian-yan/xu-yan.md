@@ -54,7 +54,7 @@ UNIX 系统的运行范围上至最大的巨型机，下至个人家庭系统。
 
 我们感谢以下各位，他们都阅读并评论了本书的初稿：Wayne Hathaway（Ultra Network Technologies）、Maurice Herlihy（卡内基-梅隆大学）、Thomas LeBlanc（罗切斯特大学）、Larry Peterson（亚利桑那大学）、Robert Elz（墨尔本大学）、Peter Collinson（肯特大学）、Dennis Ritchie（AT&T 贝尔实验室）、Matt Koehler（Sun Microsystems）、Eric Allman（国际计算机科学研究所）、Mike Hibler（犹他大学）、Robert Gingell（Sun Microsystems）、Joseph Moran（Legato Systems）、Christopher Torek（马里兰大学）、Kevin Fall（加州大学伯克利分校）、Peter Salus（Usenix 协会）、Evi Nemeth（科罗拉多大学）、Jim Lawson（Pixar）、Mike Paquette（Pixar）、Mike Russell（Pixar）、Donn Seeley（犹他大学）、Jay Lepreau（犹他大学）、Bill Shannon（Sun Microsystems）、Donald Coleman（Unisoft Corporation）、Michael O'Dell（Prisma, Incorporated）、Michel Gien 及其同事（Chorus Systèmes）。
 
-本书使用 `pic`、`tbl`、`eqn` 和 `ditroff` 制作。索引由从 Jon Bentley 和 Brian Kernighan 所写索引程序衍生而来的 `awk` 脚本生成 [Bentley & Kernighan, 1986]。大部分插图先用 `cip` 生成 `pic` 输入，再经手工修整，清理毛糙的线条和未居中的文字。插图摆放和孤行消除由 `ditroff` 宏完成，孤字消除和偶数页底部对齐则只能手工处理。到头来我们的结论是：一定有更好的办法！
+本书使用 `pic`、`tbl`、`eqn` 和 `ditroff` 制作。索引由从 Jon Bentley 和 Brian Kernighan 所写索引程序衍生而来的 `awk` 脚本生成 [Bentley & Kernighan, 1986]。大部分插图先用 `cip` 生成 `pic` 输入，再经手工修整，清理毛糙的线条和未居中的文字。插图摆放和寡行消除由 `ditroff` 宏完成，孤行消除和偶数页底部对齐则只能手工处理。到头来我们的结论是：一定有更好的办法！
 
 作者欢迎读者把改进建议，或对本书排印错误及其他错误的意见，用电子邮件发往 **bsdbook-bugs@berkeley.edu**。
 
