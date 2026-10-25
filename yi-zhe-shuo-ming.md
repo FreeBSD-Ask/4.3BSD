@@ -558,8 +558,8 @@
 | silly window syndrome（SWS） | 糊涂窗口综合症 | 中文维基百科、百度百科通行译法 |
 | single indirect block | 一级间接块 | |
 | single-user mode | 单用户模式 | |
-| slave device | 从设备 | |
-| slave routine | 从例程 | |
+| slave device | 从属设备 | |
+| slave routine | 从属例程 | |
 | sleep queue | 睡眠队列 | |
 | sliding-window scheme | 滑动窗口机制 | |
 | SLIP | 串行线路 IP（SLIP） | |
