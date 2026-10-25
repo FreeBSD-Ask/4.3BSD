@@ -18,11 +18,6 @@
 * 原书版权页与商标说明页保留英文原文，不作翻译。
 * 翻译与校对进度见 [PROJECT-PROGRESS.md](PROJECT-PROGRESS.md)，里程碑见 [CHANGELOG.md](CHANGELOG.md)。
 
-## 项目链接
-
-* 仓库与在线阅读地址：待发布后补充
-* FreeBSD 中文社区：<https://freebsd-ask.github.io/>
-
 ## 许可
 
 译文以 BSD 2-Clause 许可发布，见 [LICENSE](LICENSE)。
