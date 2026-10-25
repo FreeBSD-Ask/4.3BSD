@@ -480,7 +480,7 @@
 | raw I/O | 裸 I/O | |
 | raw mode | 原始模式 | 输入即收、不加解释的终端模式 |
 | raw socket | 原始套接字 | 直接访问低层通信协议的套接字 |
-| raw-socket interface | 裸套接字接口 | |
+| raw-socket interface | 原始套接字接口 | raw socket 族统一译“原始”（2026-10-25 校对一裁定）；raw device/裸设备、raw I/O/裸 I/O 属存储语境仍用“裸” |
 | Ready for Next Message (RFNM) | 就绪接收下一报文（RFNM） | ARPANET 流控 |
 | real GID | 实际组标识符 | |
 | real group identifier (real GID) | 实际组标识符 | |
