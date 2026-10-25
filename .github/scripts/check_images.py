@@ -16,14 +16,15 @@ REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 ASSETS_DIR = os.path.join(REPO, '.gitbook', 'assets')
 REPORT_PATH = os.path.join(REPO, 'image-report.md')
 IMG_REF = re.compile(r'!\[[^\]]*\]\(([^)]+)\)')
-SKIP_DIRS = {'.git', '.gitbook', 'node_modules', 'en', 'script'}
+SKIP_DIRS = {'.git', '.gitbook', 'node_modules', 'en', 'script', 'specs'}
+SKIP_FILES = {'AGENTS.md', 'mu-lu.md'}  # 治理文档与生成目录，图片引用仅为示例
 
 
 def iter_md_files():
     for root, dirs, files in os.walk(REPO):
         dirs[:] = [d for d in dirs if d not in SKIP_DIRS and not d.startswith('.')]
         for name in sorted(files):
-            if name.endswith('.md'):
+            if name.endswith('.md') and name not in SKIP_FILES:
                 yield os.path.join(root, name)
 
 

@@ -156,6 +156,9 @@ vite.config.ts.timestamp-*
 /2.pdf
 *.pdf
 
+# CI 图片检查生成的报告
+/image-report.md
+
 # Spec Kit 本地集成（可由 specify init 重建；specs/ 任务书仍入库）
 /.specify/
 /.zcode/
