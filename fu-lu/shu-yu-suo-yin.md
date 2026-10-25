@@ -1428,7 +1428,7 @@
 * **swap()**（*swap*()）：[5.12 页面置换](../di-er-bu-fen-jin-cheng/5.12.-ye-mian-zhi-huan.md)
 * **交换区**（swap area）：[5.1 术语](../di-er-bu-fen-jin-cheng/5.1.-shu-yu.md)、[词汇表](ci-hui-biao.md)
 * **交换设备**（swap device）：[5.1 术语](../di-er-bu-fen-jin-cheng/5.1.-shu-yu.md)、[5.2 4.3BSD 存储管理的演进](../di-er-bu-fen-jin-cheng/5.2.-4.3bsd-cun-chu-guan-li-de-yan-jin.md)、[词汇表](ci-hui-biao.md)
-* **交换映射表**（swap map）：[5.6 每进程资源](../di-er-bu-fen-jin-cheng/5.6.-mei-jin-cheng-zi-yuan.md)、[词汇表](ci-hui-biao.md)
+* **交换映射**（swap map）：[5.6 每进程资源](../di-er-bu-fen-jin-cheng/5.6.-mei-jin-cheng-zi-yuan.md)、[词汇表](ci-hui-biao.md)
 * **交换空间**（swap space）：[5.1 术语](../di-er-bu-fen-jin-cheng/5.1.-shu-yu.md)、[词汇表](ci-hui-biao.md)
   * allocation：[5.6 每进程资源](../di-er-bu-fen-jin-cheng/5.6.-mei-jin-cheng-zi-yuan.md)
   * allocation during execve 系统调用（allocation during *execve* system call）：[5.6 每进程资源](../di-er-bu-fen-jin-cheng/5.6.-mei-jin-cheng-zi-yuan.md)

@@ -84,7 +84,9 @@
 | broadcast | 广播 | |
 | bss segment | bss 段 | 未初始化数据段 |
 | buffer | 缓冲区 | |
-| buffer cache | 缓冲区高速缓存 | |
+| buffer cache | 缓冲区高速缓存 | 缓冲缓存、缓冲高速缓存 一律写 缓冲区高速缓存 |
+| buffer header | 缓冲区头 | 缓冲头 一律写 缓冲区头 |
+| buffer pool | 缓冲池 | |
 | buffered | 缓冲的 | |
 | buffered data path | 缓冲数据通路 | |
 | bus | 总线 | |
@@ -203,7 +205,7 @@
 | fault rate | 缺页率 | |
 | Federal Information Processing Standard (FIPS) | 联邦信息处理标准（FIPS） | NBS 发布 |
 | fetch policy | 取页策略 | 何时取页调入内存 |
-| ffs | 快速文件系统（FFS） | |
+| ffs | ffs 指令 | VAX 指令：定位一串位中第一个为一的位（词汇表词条；与 fast filesystem 译名区分） |
 | field | 字段 | |
 | FIFO | 命名管道（FIFO） | 先进先出的进程间通信文件 |
 | file | 文件 | |
@@ -318,7 +320,7 @@
 | lock | 锁 | |
 | logical block | 逻辑块 | 文件线性长度按文件系统块大小划分得到的块 |
 | logical drive partitions | 逻辑驱动器分区 | |
-| logical unit | 逻辑单元 | 自动配置发现的逻辑部件号 |
+| logical unit | 逻辑部件号 | 自动配置发现的逻辑部件号（8.3/8.5/8.6 统一译法） |
 | login | 登录 | /bin/login 保留路径 |
 | login shell | 登录 shell | |
 | long-haul network | 远程网络 | |
@@ -381,7 +383,7 @@
 | nice | — | nice 值保留 |
 | nonblocking I/O | 非阻塞 I/O | |
 | nonlocal goto | 非局部跳转 | |
-| nonresident | 非驻留 | |
+| nonresident | 不驻留 | 与 resident→驻留 成对（正文/词汇表统一译法） |
 | octet | 八位组 | |
 | old terminal driver | 旧终端驱动 | V7 风格 tty 驱动 |
 | open file table | 打开文件表 | |
@@ -434,7 +436,7 @@
 | port（网络） | 端口 | |
 | port / porting（移植） | 移植 | 与“端口”按义项区分 |
 | POSIX | 可移植操作系统接口（POSIX） | |
-| post a signal | 发送信号 | |
+| post a signal | 投递信号 | post ≠ send（正文 4.7 含图 4.8 图注统一译法） |
 | preemption | 抢占 | |
 | prefetching | 预取 | |
 | prepaging | 预调页 | |
@@ -488,6 +490,7 @@
 | real-time timer | 实时计时器 | SIGALRM |
 | real UID | 实际用户标识符 | |
 | real user identifier (real UID) | 实际用户标识符 | |
+| receive buffer | 接收缓冲区 | 接收缓冲 一律写 接收缓冲区 |
 | receive window | 接收窗口 | |
 | reclaim | 回收 | |
 | reclaim from free | 从空闲表回收 | |
@@ -532,6 +535,7 @@
 | segment | 段 | 存储管理中指连续地址区间；TCP 中指连续序号区间及其关联数据 |
 | select | — | 系统调用名保留 |
 | semaphore | 信号量 | |
+| send buffer | 发送缓冲区 | 发送缓冲 一律写 发送缓冲区 |
 | send window | 发送窗口 | |
 | sense request | 状态请求 | 进程在套接字上执行 stat 系统调用后传入用户请求例程的请求 |
 | Sequenced Packet Protocol (SPP) | 顺序分组协议（SPP） | XNS |
@@ -610,7 +614,7 @@
 | swap area | 交换区 | |
 | swap device | 交换设备 | 交换区所在的设备 |
 | swapin / swapout | 换入／换出 | |
-| swap map | 交换映射表 | 描述交换区可用空间的数据结构 |
+| swap map | 交换映射 | 描述交换区可用空间的数据结构（5.6/词汇表统一译法） |
 | swapping | 交换 | 教材另有“对换”，本表统一“交换” |
 | swapping process（swapper） | 交换进程 | 0 号进程 |
 | swap space | 交换空间 | 词汇表作 swap area（交换区）的同义词；FreeBSD 中文使用手册译法 |
