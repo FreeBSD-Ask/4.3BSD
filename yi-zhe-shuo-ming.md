@@ -32,6 +32,7 @@
 | 2MSL timer | 2MSL 计时器 | TCP TIME_WAIT 状态 |
 | 4.2BSD fast filesystem | 快速文件系统 | FFS |
 | absolute pathname | 绝对路径名 | 见 pathname（路径名） |
+| access group | 访问组 | 前言：每进程可属多个访问组（multiple access groups per process） |
 | access method | 访问方法 | |
 | access rights | 访问权限 | 4.3BSD IPC 支持随报文传递访问权 |
 | accounting | 记账 | 系统记账（system accounting） |
@@ -325,6 +326,7 @@
 | login | 登录 | /bin/login 保留路径 |
 | login shell | 登录 shell | |
 | long-haul network | 远程网络 | |
+| long-lived | 长命的 | 与 short-lived→短命的 成对（词汇表 association/daemon 释义） |
 | long-term–scheduling algorithm | 长期调度算法 | |
 | loop | 页环 | 存储管理中由全局 CLOCK 算法管理的常驻页集合 |
 | lossy | 易丢包的 | |
@@ -549,6 +551,7 @@
 | set-priority-level | 设置优先级 | 经 `spl` 前缀例程（如 `spltty()`）设置处理机优先级 |
 | set-user-identifier program | 设置用户标识符程序 | setuid 程序 |
 | shadow swap map | 影子交换映射 | 位于每个进程 user 结构中，在进程持有既有交换空间期间临时记录新分配的交换空间 |
+| short-lived | 短命的 | 与 long-lived→长命的 成对（词汇表 association/daemon 释义） |
 | shared text | 共享正文段 | 即 shared text segment 的行文用词 |
 | shared text segment | 共享正文段 | 多个进程共享的正文段，由魔数识别 |
 | shell | — | 不译 |
@@ -608,6 +611,7 @@
 | stub | 桩 | 汇编语言桩 |
 | subnetwork | 子网 | |
 | superblock | 超级块 | |
+| supercomputer | 巨型机 | 前言用词，与 1.1 一致 |
 | superuser | 超级用户 | UID 为 0 的用户，登录名通常为 `root` |
 | supplementary groups | 补充组 | 附加 GID 数组 |
 | svpctx | — | VAX 指令：保存进程上下文，保留 |
