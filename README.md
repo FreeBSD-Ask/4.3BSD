@@ -1,6 +1,6 @@
 # 4.3BSD UNIX 操作系统设计与实现
 
-《4.3BSD UNIX 操作系统的设计与实现》（*The Design and Implementation of the 4.3BSD UNIX Operating System*）简体中文翻译项目。
+《4.3BSD UNIX 操作系统设计与实现》（*The Design and Implementation of the 4.3BSD UNIX Operating System*）简体中文翻译项目。
 
 FreeBSD 中文社区译制，基于 Markdown 格式发布。
 
@@ -11,7 +11,7 @@ FreeBSD 中文社区译制，基于 Markdown 格式发布。
 * 出版：Addison-Wesley，1989 年
 * 篇幅：5 个部分共 13 章，另有词汇表与索引，中文章号与原书 1:1 对应
 
-本书是关于 Berkeley UNIX（BSD）内核设计与实现的权威著作：从 UNIX 历史与设计目标讲起，依次剖析内核服务、进程管理与内存管理、I/O 系统（描述符、文件系统、设备驱动、终端处理）、进程间通信与网络协议栈，最后以系统启动流程收尾。书中对 4.3BSD 内核数据结构、算法与权衡取舍的论述，是后续《4.4BSD 操作系统的设计与实现》一书的直接前身。
+本书是关于 Berkeley UNIX（BSD）内核设计与实现的权威著作：从 UNIX 历史与设计目标讲起，依次剖析内核服务、进程管理与内存管理、I/O 系统（描述符、文件系统、设备驱动、终端处理）、进程间通信与网络协议栈，最后以系统启动流程收尾。书中对 4.3BSD 内核数据结构、算法与权衡取舍的论述，是后续《4.4BSD 操作系统设计与实现》一书的直接前身。
 
 ## 关于译本
 
@@ -19,7 +19,7 @@ FreeBSD 中文社区译制，基于 Markdown 格式发布。
 * 原书各章末的习题（Exercises）照译；参考文献（References）保留英文原样。
 * 原书版权页与商标说明页保留英文原文，不作翻译。
 * 翻译与校对进度见 [PROJECT-PROGRESS.md](PROJECT-PROGRESS.md)，里程碑见 [CHANGELOG.md](CHANGELOG.md)。
-* 另有配套书籍 《4.3BSD UNIX 操作系统的设计与实现习题解答》（*The Design and Implementation of the 4.3 Bsd Unix Operating System: Answer Book* ISBN-10: ‎0201546299、ISBN-13: ‎978-0201546293）由于成本过高，未能获取有效底本，无法一同译出。如有资源，请提交 issue 反馈，以飨读者。
+* 另有配套书籍 《4.3BSD UNIX 操作系统设计与实现习题解答》（*The Design and Implementation of the 4.3 Bsd Unix Operating System: Answer Book* ISBN-10: ‎0201546299、ISBN-13: ‎978-0201546293）由于成本过高，未能获取有效底本，无法一同译出。如有资源，请提交 issue 反馈，以飨读者。
 
 ## 许可
 
