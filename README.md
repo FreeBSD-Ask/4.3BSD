@@ -1,6 +1,8 @@
 # 4.3BSD UNIX 操作系统的设计与实现
 
-《4.3BSD UNIX 操作系统的设计与实现》（*The Design and Implementation of the 4.3BSD UNIX Operating System*）简体中文翻译项目，由 FreeBSD 中文社区译制，基于 GitBook 格式发布。
+《4.3BSD UNIX 操作系统的设计与实现》（*The Design and Implementation of the 4.3BSD UNIX Operating System*）简体中文翻译项目。
+
+FreeBSD 中文社区译制，基于 Markdown 格式发布。
 
 ## 关于本书
 
@@ -17,6 +19,7 @@
 * 原书各章末的习题（Exercises）照译；参考文献（References）保留英文原样。
 * 原书版权页与商标说明页保留英文原文，不作翻译。
 * 翻译与校对进度见 [PROJECT-PROGRESS.md](PROJECT-PROGRESS.md)，里程碑见 [CHANGELOG.md](CHANGELOG.md)。
+* 另有配套书籍 《4.3BSD UNIX 操作系统的设计与实现习题解答》（*The Design and Implementation of the 4.3 Bsd Unix Operating System: Answer Book* ISBN-10: ‎0201546299、ISBN-13: ‎978-0201546293）由于成本过高，未能获取有效底本，无法一同译出。如有资源，请提交 issue 反馈，以飨读者。
 
 ## 许可
 
