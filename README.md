@@ -1,4 +1,4 @@
-# 4.3BSD UNIX 操作系统的设计与实现
+# 4.3BSD UNIX 操作系统设计与实现
 
 《4.3BSD UNIX 操作系统的设计与实现》（*The Design and Implementation of the 4.3BSD UNIX Operating System*）简体中文翻译项目。
 
