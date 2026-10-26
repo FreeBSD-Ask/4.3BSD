@@ -15,7 +15,7 @@ FreeBSD 中文社区译制，基于 Markdown 格式发布。
 
 ## 关于译本
 
-* 术语以[译者说明与全局术语表](yi-zhe-shuo-ming.md)为准，并尽量与《4.4BSD 操作系统的设计与实现》官方中译本保持一致。
+* 术语以[译者说明与全局术语表](yi-zhe-shuo-ming.md)为准，并尽量与《4.4BSD 操作系统设计与实现》官方中译本保持一致。
 * 原书各章末的习题（Exercises）照译；参考文献（References）保留英文原样。
 * 原书版权页与商标说明页保留英文原文，不作翻译。
 * 翻译与校对进度见 [PROJECT-PROGRESS.md](PROJECT-PROGRESS.md)，里程碑见 [CHANGELOG.md](CHANGELOG.md)。

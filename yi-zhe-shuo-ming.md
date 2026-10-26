@@ -4,7 +4,7 @@
 
 **译名参照系**（优先级从高到低）：
 
-1. 《4.4BSD 操作系统的设计与实现》官方中译本（本书姊妹篇，术语高度重叠）；
+1. 《4.4BSD 操作系统设计与实现》官方中译本（本书姊妹篇，术语高度重叠）；
 2. 操作系统与网络经典教材通行译法（《操作系统概念》《计算机网络》等中译本）；
 3. FreeBSD 中文社区既有项目译法（含 FreeBSD 中文使用手册）。
 
@@ -764,8 +764,8 @@
 
 | 原名 | 译名 | 备注 |
 | ---- | ---- | ---- |
-| The Design and Implementation of the 4.3BSD UNIX Operating System | 《4.3BSD UNIX 操作系统的设计与实现》 | 本书，用户 2026-10-24 裁定 |
-| The Design and Implementation of the 4.4BSD Operating System | 《4.4BSD 操作系统的设计与实现》 | 官方中译本，术语参照系① |
+| The Design and Implementation of the 4.3BSD UNIX Operating System | 《4.3BSD UNIX 操作系统设计与实现》 | 本书，用户 2026-10-24 裁定 |
+| The Design and Implementation of the 4.4BSD Operating System | 《4.4BSD 操作系统设计与实现》 | 官方中译本，术语参照系① |
 | The C Programming Language（Kernighan & Ritchie） | 《C 程序设计语言》 | 有中文译本 |
 | The UNIX Programming Environment（Kernighan & Pike） | 《UNIX 编程环境》 | 有中文译本 |
 | The Design of the UNIX Operating System（Bach） | 《UNIX 操作系统设计》 | 有中文译本 |

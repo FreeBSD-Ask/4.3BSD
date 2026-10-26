@@ -4,7 +4,7 @@
 
 ## 仓库概览
 
-这是《4.3BSD UNIX 操作系统的设计与实现》（*The Design and Implementation of the 4.3BSD UNIX Operating System*，Samuel J. Leffler、Marshall Kirk McKusick、Michael J. Karels、John S. Quarterman 著，Addison-Wesley 1989 年出版）的简体中文翻译项目，由 FreeBSD 中文社区译制，基于 GitBook 格式发布。
+这是《4.3BSD UNIX 操作系统设计与实现》（*The Design and Implementation of the 4.3BSD UNIX Operating System*，Samuel J. Leffler、Marshall Kirk McKusick、Michael J. Karels、John S. Quarterman 著，Addison-Wesley 1989 年出版）的简体中文翻译项目，由 FreeBSD 中文社区译制，基于 GitBook 格式发布。
 
 * 原文：仓库根目录的 **2.pdf**（496 页）。该文件 **不纳入版本控制**（见 `.gitignore`），不属于待翻译产物。
 * **2.pdf 是扫描件**（ScanSnap 扫描 + Adobe ClearScan OCR）：其内嵌文本层 **完全不信任**（2026-10-24 用户裁定），存在系统性识别错误（`I/O`→`1/0`、`Inode`→`!node`、`45`→`4S` 等）。一切内容以 **页面图像** 为唯一权威源；文本层至多用于页码定位与结构普查，**禁止** 作为任何译文内容的来源。
@@ -22,7 +22,7 @@
 
 以下决策已由用户拍板，不得擅自变更：
 
-1. 书名《4.3BSD UNIX 操作系统的设计与实现》，首次出现处括注英文原名。
+1. 书名《4.3BSD UNIX 操作系统设计与实现》，首次出现处括注英文原名。
 2. 书末 Glossary（词汇表，印刷 413–450）**全文翻译为附录**。
 3. 书末 Index（索引，印刷 451–496）**转译为中文术语索引**：词条译为中文（保留英文原词）、按拼音排序、每个词条链接到对应章节页面；原索引的 see/see also 关系在中文词条间重建，不保留印刷页码。
 4. **完全不信任 OCR 文本层**；原文由视觉转录页面图像获得。
@@ -118,7 +118,7 @@ py script/render_pages.py 268 277 300  # 代码密集页用 300 DPI
 * 产品名、软件名、命令名保持英文：UNIX、BSD、System V、VAX、PDP-11、Sun、DEC、shell、uucp、Usenet、vi、Emacs、GNU 等。
 * **公司名**：有中文通行译名的著名公司采用中译（微软、惠普、苹果、施乐、英特尔、摩托罗拉、索尼、东芝、康柏、霍尼韦尔、西方电气公司、麦格劳-希尔、艾迪生-韦斯利等，完整清单见 `yi-zhe-shuo-ming.md`）；无通行译名者保持英文（IBM、AT&T、DEC、Sun 等）。芯片/机器型号中的品牌一律保持英文（Intel 80386、Motorola 68000、VAX-11/780、Sun 3）。
 * 常用内核术语（详见术语表）：“shell” 不译为“壳/外壳”；“daemon” → “守护进程”；“kernel” → “内核”；“source(s)” → “源码”；“timesharing” → “分时”；“port/porting” → “移植”；“repository” → “存储库”（禁止“仓库”）；“copy” → “复制”（禁止“拷贝”）；“paging” → “调页”；“inode” → “索引节点”；“buffer” → “缓冲区”（buffer cache → 缓冲区高速缓存、buffer header → 缓冲区头；buffer pool → 缓冲池；buffering 动词义与 buffered data path 仍用“缓冲”）。多义词（swapping、block、channel 等）按义项以术语表登记为准。
-* **译名参照系**（优先级从高到低）：①《4.4BSD 操作系统的设计与实现》官方中译本（中国电力出版社）既有译法；②操作系统与网络经典教材通行译法（《操作系统概念》《计算机网络》等中译本）；③FreeBSD 中文社区既有项目译法。三者冲突时取①；均无先例且无把握者保留英文并备注待议。
+* **译名参照系**（优先级从高到低）：①《4.4BSD 操作系统设计与实现》官方中译本（中国电力出版社）既有译法；②操作系统与网络经典教材通行译法（《操作系统概念》《计算机网络》等中译本）；③FreeBSD 中文社区既有项目译法。三者冲突时取①；均无先例且无把握者保留英文并备注待议。
 * “UNIX” 保持原书大小写：标题与正文中通常写作 UNIX；原书刻意使用 “Unix” 处保持原样，禁止机械统一。
 * 新术语先查对照表；表里没有的，确定译法后先补录，再在正文使用。**同一英文术语在同一义项下最多一个译名**；多义词按义项分行登记。
 
