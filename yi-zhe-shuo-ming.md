@@ -122,7 +122,7 @@
 | communication domain | 通信域 | 即 domain（通信域） |
 | communication protocol | 通信协议 | |
 | compiler | 编译器 | |
-| Computer Systems Research Group (CSRG) | 计算机系统研究组（CSRG） | 伯克利 BSD 开发团队 |
+| Computer Systems Research Group (CSRG) | 计算机系统研究小组（CSRG） | 伯克利 BSD 开发团队 |
 | configuration file | 配置文件 | |
 | configuration procedure | 配置过程 | |
 | congestion | 拥塞 | |
