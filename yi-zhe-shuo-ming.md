@@ -738,6 +738,7 @@
 | AT&T | — | 保留 |
 | Bell Laboratories / Bell Labs | 贝尔实验室 | |
 | Carnegie-Mellon University | 卡内基-梅隆大学 | |
+| Case Western Reserve University | 凯斯西储大学 | 5.2 |
 | DARPA | 美国国防高级研究计划局 | 正文中 DARPA Internet 保留专名 |
 | DEC（Digital Equipment Corporation） | — | 保留 DEC；需要全称时译“数字设备公司” |
 | Hewlett-Packard | 惠普 | |
